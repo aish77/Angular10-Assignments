@@ -1,0 +1,23 @@
+
+
+<div class="container">
+<ul class="navbar">
+    <li (click)="changeDisplay($event)" class="item"><a href="">HOME</a></li>
+    <li (click)="changeDisplay($event)" class="item"><a href="">PROJECTS</a></li>
+    <li (click)="changeDisplay($event)" class="item"><a href="">SERVICE</a></li>
+    <li (click)="changeDisplay($event)" class="item"><a href="">CONTACT</a></li>
+
+</ul>
+
+
+
+  
+  <div *ngIf="preClick" >
+    <p class = "selection" >Please click a menu item</p>
+  </div>
+
+  <div *ngIf="postClick">
+    <p class = "selection" >You chose <span>{{display}}</span></p>
+  </div>
+
+</div>
